@@ -1,439 +1,277 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
 
-<style media="screen">
-
-* {
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-}
-
-.container {
-max-width: 1400px;
-padding: 0 15px;
-margin: 0 auto;
-touch-action: auto;
-}
-
-
-.cards {
-display: flex;
-padding: 25px 0px;
-list-style: none;
-overflow-x: scroll;
-overflow-y: hidden;
-}
-
-.card {
-display: flex;
-flex-direction: column;
-flex: 0 0 100%;
-background: #0C0C31;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-scroll-snap-align: start;
-transition: all 0.2s;
-max-width: 250px;
-width: 250px;
-height: 400px;
-align-items: flex-start;
-}
-
-.card>div>img{
-  width: 100%;
-  height: 250px;
-}
-
-.card .card-title {
-font-size: 18px;
-text-align: left;
-color: white;
-margin-bottom: 5px
-}
-
-.sliderprofile{
-  display: flex;
-  align-items: flex-start;
-}
-
-.sliderprofile>img{
-  width: 30px;
-  height: 30px;
-  border-radius: 50px
-}
-
-.sliderprofile>p{
-  font-size: 16px;
-  font-weight: 400;
-  margin-left: 10px;
-  padding-top: 4px
-}
-
-.sliderprice{
-  margin-top: 30px;
-  text-align: left;
-}
-
-.sliderprice>p{
-  color: #9D9DE7
-}
-
-.sliderprice>h6{
-  font-size: 16px
-}
-
-.sliderbid{
-  text-align: right;
-  position: relative;
-  top: -35px;
-}
-
-.sliderbid>p{
-  color: #9D9DE7
-}
-
-.sliderbid>h6{
-  font-size: 16px
-}
-
-.card:not(:last-child) {
-margin-right: 10px;
-}
-
-
-.card .card-link-wrapper {
-margin-top: auto;
-touch-action: auto;
-}
-
-.card .card-link {
-display: inline-block;
-text-decoration: none;
-color: white;
-background: var(--red);
-padding: 6px 12px;
-border-radius: 8px;
-transition: background 0.2s;
-touch-action: auto;
-}
-
-.cards::-webkit-scrollbar {
-height: 0px;
-}
-
-.ms-touch.slider {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  touch-action: auto;
-  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
-}
-
-@media (min-width: 500px) {
-.card {
-  flex-basis: calc(50% - 10px);
-}
-
-.card:not(:last-child) {
-  margin-right: 20px;
-}
-}
-
-@media (min-width: 700px) {
-.card {
-  flex-basis: calc(calc(100% / 3) - 20px);
-}
-
-.card:not(:last-child) {
-  margin-right: 30px;
-}
-}
-
-@media (min-width: 1100px) {
-.card {
-  flex-basis: calc(25% - 30px);
-}
-
-.card:not(:last-child) {
-  margin-right: 40px;
-}
-}
-</style>
+<body>
 
 
 
-    <div class="container">
-      <ul class="cards">
-        <li class="card">
-          <div>
-            <img src="img/sliderimg1.png" alt="sliderimg1.png">
-            <h5 class="card-title">Krill</h5>
-            <div class="sliderprofile">
-              <img src="img/sliderimg7.png">
-              <p>MAWC</p>
-            </div>
-            <div class="sliderprice">
-              <p>Price</p>
-              <h6>80 SHM</h6>
-            </div>
-            <div class="sliderbid">
-              <p>Highest bid</p>
-              <h6>7.59 wSHM</h6>
-            </div>
-          </div>
-        </li>
+  <style media="screen">
 
-          <li class="card">
-            <div>
-              <img src="img/sliderimg2.png" alt="sliderimg1.png">
-              <h5 class="card-title">Krill</h5>
-              <div class="sliderprofile">
-                <img src="img/sliderimg7.png">
-                <p>MAWC</p>
-              </div>
-              <div class="sliderprice">
-                <p>Price</p>
-                <h6>80 SHM</h6>
-              </div>
-              <div class="sliderbid">
-                <p>Highest bid</p>
-                <h6>7.59 wSHM</h6>
-              </div>
-            </div>
-          </li>
-            <li class="card">
-              <div>
-                <img src="img/sliderimg3.png" alt="sliderimg1.png">
-                <h5 class="card-title">Krill</h5>
-                <div class="sliderprofile">
-                  <img src="img/sliderimg7.png">
-                  <p>MAWC</p>
-                </div>
-                <div class="sliderprice">
-                  <p>Price</p>
-                  <h6>80 SHM</h6>
-                </div>
-                <div class="sliderbid">
-                  <p>Highest bid</p>
-                  <h6>7.59 wSHM</h6>
-                </div>
-              </div>
-            </li>
-              <li class="card">
-                <div>
-                  <img src="img/sliderimg4.png" alt="sliderimg1.png">
-                  <h5 class="card-title">Krill</h5>
-                  <div class="sliderprofile">
-                    <img src="img/sliderimg7.png">
-                    <p>MAWC</p>
-                  </div>
-                  <div class="sliderprice">
-                    <p>Price</p>
-                    <h6>80 SHM</h6>
-                  </div>
-                  <div class="sliderbid">
-                    <p>Highest bid</p>
-                    <h6>7.59 wSHM</h6>
-                  </div>
-                </div>
-              </li>
-                <li class="card">
-                  <div>
-                    <img src="img/sliderimg5.png" alt="sliderimg1.png">
-                    <h5 class="card-title">Krill</h5>
-                    <div class="sliderprofile">
-                      <img src="img/sliderimg7.png">
-                      <p>MAWC</p>
-                    </div>
-                    <div class="sliderprice">
-                      <p>Price</p>
-                      <h6>80 SHM</h6>
-                    </div>
-                    <div class="sliderbid">
-                      <p>Highest bid</p>
-                      <h6>7.59 wSHM</h6>
-                    </div>
-                  </div>
-                </li>
-                  <li class="card">
-                    <div>
-                      <img src="img/sliderimg6.png" alt="sliderimg1.png">
-                      <h5 class="card-title">Krill</h5>
-                      <div class="sliderprofile">
-                        <img src="img/sliderimg7.png">
-                        <p>MAWC</p>
-                      </div>
-                      <div class="sliderprice">
-                        <p>Price</p>
-                        <h6>80 SHM</h6>
-                      </div>
-                      <div class="sliderbid">
-                        <p>Highest bid</p>
-                        <h6>7.59 wSHM</h6>
-                      </div>
-                    </div>
-                  </li>
-                    <li class="card">
-                      <div>
-                        <img src="img/sliderimg7.png" alt="sliderimg1.png">
-                        <h5 class="card-title">Krill</h5>
-                        <div class="sliderprofile">
-                          <img src="img/sliderimg7.png">
-                          <p>MAWC</p>
-                        </div>
-                        <div class="sliderprice">
-                          <p>Price</p>
-                          <h6>80 SHM</h6>
-                        </div>
-                        <div class="sliderbid">
-                          <p>Highest bid</p>
-                          <h6>7.59 wSHM</h6>
-                        </div>
-                      </div>
-                    </li>
-                      <li class="card">
-                        <div>
-                          <img src="img/sliderimg8.png" alt="sliderimg1.png">
-                          <h5 class="card-title">Krill</h5>
-                          <div class="sliderprofile">
-                            <img src="img/sliderimg7.png">
-                            <p>MAWC</p>
-                          </div>
-                          <div class="sliderprice">
-                            <p>Price</p>
-                            <h6>80 SHM</h6>
-                          </div>
-                          <div class="sliderbid">
-                            <p>Highest bid</p>
-                            <h6>7.59 wSHM</h6>
-                          </div>
-                        </div>
-                      </li>
-                        <li class="card">
-                          <div>
-                            <img src="img/sliderimg9.png" alt="sliderimg1.png">
-                            <h5 class="card-title">Krill</h5>
-                            <div class="sliderprofile">
-                              <img src="img/sliderimg7.png">
-                              <p>MAWC</p>
-                            </div>
-                            <div class="sliderprice">
-                              <p>Price</p>
-                              <h6>80 SHM</h6>
-                            </div>
-                            <div class="sliderbid">
-                              <p>Highest bid</p>
-                              <h6>7.59 wSHM</h6>
-                            </div>
-                          </div>
-                        </li>
-                          <li class="card">
-                            <div>
-                              <img src="img/sliderimg10.png" alt="sliderimg1.png">
-                              <h5 class="card-title">Krill</h5>
-                              <div class="sliderprofile">
-                                <img src="img/sliderimg7.png">
-                                <p>MAWC</p>
-                              </div>
-                              <div class="sliderprice">
-                                <p>Price</p>
-                                <h6>80 SHM</h6>
-                              </div>
-                              <div class="sliderbid">
-                                <p>Highest bid</p>
-                                <h6>7.59 wSHM</h6>
-                              </div>
-                            </div>
-                          </li>
+    #time {
+      display: flex;
+      gap: 30px;
 
-      </ul>
+
+    }
+
+    #time .circle {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20%;
+    }
+
+
+    @media(min-width:1706px) {
+      #time {
+        max-width: 1600px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media(max-width:1276px) {
+      #time{
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #time .circle {
+        margin-left: 10%
+      }
+    }
+
+
+    @media(max-width:1050px) {
+      #time{
+        max-width: 900px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #time .circle {
+        margin-left: 7%
+      }
+    }
+
+
+    @media(max-width:1050px) {
+      #time{
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #time .circle {
+        margin-left: 4%
+      }
+    }
+
+    @media(max-width:950px) {
+      #time{
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #time .circle {
+        margin-left: 0
+      }
+    }
+
+    #time .circle svg {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      transform: rotate(270deg);
+    }
+
+    #time .circle svg circle {
+      width: 100%;
+      height: 100%;
+      fill: transparent;
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke: #282828;
+      transform: translate(5px, 5px);
+    }
+
+    #time .circle svg circle:nth-child(2) {
+      stroke: var(--clr);
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+    }
+
+    #time div {
+      position: absolute;
+      text-align: center;
+      font-weight: 500;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    #time div span {
+      position: absolute;
+      transform: translateX(-50%) translateY(-10px);
+      font-size: 0.35em;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    #time .dots {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      z-index: 1000;
+    }
+
+    #time .dots::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      width: 15px;
+      height: 15px;
+      background: var(--clr);
+      border-radius: 50%;
+      box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+
+    }
+  </style>
+
+
+  <div id="time">
+    <div class="circle" style="--clr: #00E0DD;">
+      <div class="dots day_dot"></div>
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="dd"></circle>
+      </svg>
+      <div id="days">00 <br><span>Days</span> </div>
+
     </div>
 
-<script type="text/javascript">
-
-const slider = document.querySelector(".cards");
-slider.addEventListener("mousedown", e => {});
-slider.addEventListener("mouseleave", () => {});
-slider.addEventListener("mouseup", () => {});
-slider.addEventListener("mousemove", e => {});
-
-
-let isDown = false;
-
-slider.addEventListener("mousedown", e => {
-  isDown = true;
-});
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-});
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-});
-slider.addEventListener("mousemove", e => {
-  console.log(isDown);
-  console.log("Do work here!");
-});
+    <div class="circle" style="--clr: #00E0DD">
+      <div class="dots hr_dot"></div>
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="hh"></circle>
+      </svg>
+      <div id="hours">00</div>
+    </div>
 
 
-slider.addEventListener("mousemove", e => {
-    if (!isDown) return;
-});
+    <div class="circle" style="--clr: #00E0DD">
+      <div class="dots min_dot"></div>
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="mm"></circle>
+      </svg>
+      <div id="minutes">00</div>
+    </div>
 
-let startX;
-
-slider.addEventListener("mousedown", e => {
-  isDown = true;
-  slider.classList.add("active");
-
-  pageX = e.pageX;
-  startX = pageX - slider.offsetLeft;
-  console.log(startX);
-
-});
-
-
-let scrollLeft;
-
-slider.addEventListener("mousedown", e => {
-  isDown = true;
-  slider.classList.add("active");
-
-  pageX = e.pageX;
-  startX = pageX - slider.offsetLeft;
-
-  scrollLeft = slider.scrollLeft;
-});
-
-
-slider.addEventListener("mousemove", e => {
-  if (!isDown) return;
-
-  e.preventDefault(); //stop any weird stuff
-  const x = e.pageX - slider.offsetLeft;
-  console.log(x, startX);
-});
-
-slider.addEventListener("mousemove", e => {
-  if (!isDown) return;
-
-  e.preventDefault(); //stop any weird stuff
-  const x = e.pageX - slider.offsetLeft;
-
-  const deviation = x - startX;
-  console.log({ deviation });
-  slider.scrollLeft = scrollLeft - deviation;
-
-});
+    <div class="circle" style="--clr: #00E0DD">
+      <div class="dots sec_dot"></div>
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="ss"></circle>
+      </svg>
+      <div id="seconds">00</div>
+    </div>
 
 
 
-</script>
 
-  </body>
+    <script type="text/javascript">
+      var days = document.getElementById('days');
+      var hours = document.getElementById("hours");
+      var minutes = document.getElementById("minutes");
+      var seconds = document.getElementById("seconds");
+
+      var dd = document.getElementById("dd");
+      var hh = document.getElementById("hh");
+      var mm = document.getElementById("mm");
+      var ss = document.getElementById("ss");
+
+      var day_dot = document.querySelector(".day_dot");
+      var hr_dot = document.querySelector(".hr_dot");
+      var min_dot = document.querySelector(".min_dot");
+      var sec_dot = document.querySelector(".sec_dot");
+
+      var endDate = "02/01/2023 00:00:00";
+      // date formate mm/dd/yyyy
+
+      var x = setInterval(function() {
+        var now = new Date(endDate).getTime();
+        var countDown = new Date().getTime();
+        var distance = now - countDown;
+
+
+        // Time calculations for days,hours,minutes,seconds
+
+        var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var s = Math.floor((distance % (1000 * 60)) / (1000));
+
+        // output the result with element id
+
+        days.innerHTML = d + "<br></br><span>Days<span>";
+        hours.innerHTML = h + "<br></br><span>Hours<span>";
+        minutes.innerHTML = m + "<br></br><span>Minutes<span>";
+        seconds.innerHTML = s + "<br></br><span>Seconds<span>";
+
+        // animate strole
+
+        dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+        hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+        mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+        ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+
+        // animate dot
+        day_dot.style.transform = `rotateZ(${d * 0.986}deg)`;
+        hr_dot.style.transform = `rotateZ(${h * 15}deg)`;
+        min_dot.style.transform = `rotateZ(${m * 6}deg)`;
+        sec_dot.style.transform = `rotateZ(${s * 6}deg)`;
+
+      })
+    </script>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
 </html>
